@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+}
+.content img{
+    width: 200px;
+    height: 200px;
+}
+.content h1{
+    font-size: 110px;
+    font-weight: 600;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+.content h2{
+    font-size: 60px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left shadow */
+        1px -1px 0 black,   /* Top-right shadow */
+        -1px 1px 0 black,   /* Bottom-left shadow */
+        1px 1px 0 black; 
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.backvideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .backvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .backvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+.discover {
+    background-image: url(images/2nd\ bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Ensures the image covers the entire div */
+    width: 100%;
+    height: 40vh; /* Height remains as 40vh */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centering the text vertically and horizontally */
+    text-align: center;
+}
+.discover h1{
+    width: 70%;
+    margin: auto;
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left shadow */
+        1px -1px 0 black,   /* Top-right shadow */
+        -1px 1px 0 black,   /* Bottom-left shadow */
+        1px 1px 0 black; 
+}
+
+.available{
+    background-color: black;
+    padding: 50px 0;
+    width: 100%;
+}
+.available .available-heading{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.available .available-heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left shadow */
+        1px -1px 0 black,   /* Top-right shadow */
+        -1px 1px 0 black,   /* Bottom-left shadow */
+        1px 1px 0 black; 
+}
+
+.avai{
+    color: rgb(148, 149, 151);
+}
+
+
+.car-detail .offer-title {
+    font-size: 25px;
+    text-shadow: 
+        -1px -1px 0 black,  /* Top-left shadow */
+        1px -1px 0 black,   /* Top-right shadow */
+        -1px 1px 0 black,   /* Bottom-left shadow */
+        1px 1px 0 black; 
+    margin-bottom: 10px;
+}
+
+.car-detail .offer-subtitle {
+
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.available img{
+    margin: 30px 0;
+    width: 80%;
+}
+
+.available img:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.third{
+    display: flex;
+    justify-content: center;
+    color: rgb(148, 149, 151);
+}
+
+.services{
+    margin: 50px 0;
+}
+
+.services h1{
+    font-family: "Abril Fatface", serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.services img{
+    width: 300px;
+    height: 230px;
+    margin: 15px 0;
+}
+
+.points{
+    padding: 50px 0;
+    margin: 50px 0;
+    background-color: black;
+    color: rgb(148, 149, 151);
+}
+
+.points h2{
+    color: rgb(192, 194, 196);
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+#whatsapp{
+    margin: 50px 0;
+}
+#whatsapp .whatsapp h2{
+    margin: 5px 0;
+    font-weight: 400;
+}
+#whatsapp .whatsapp p{
+    color: rgb(132, 133, 134);
+    width: 70%;
+    margin: auto;
+    padding: 10px 0;
+}
+#whatsapp .whatsapp button{
+    background-color: white;
+    font-weight: 800;
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 2px solid black;
+    outline: none;
+    margin: 10px 0;
+}
+#whatsapp .whatsapp button:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
+#whatsapp .whatsapp button img{
+    width: 40px;
+    height: 40px;
+}
+
+#address{
+    margin: 50px 0;
+}
+#address .address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.footer{
+    padding: 50px 0;
+    background-color: black;
+}
+.footer img{
+    width: 100px;
+    height: 100px;
+}
+.footer p{
+    color: rgb(131, 132, 134);
+}
+.footer .icons{
+    display: flex;
+    gap: 30px;
+}
+.footer .icons i{
+    color: white;
+    font-size: 40px;
+}
+.footer .icons i:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.footer .us{
+    margin-top: 20px;
+}
+.footer h3{
+    color: rgb(152, 155, 158);
+}
+.footer p{
+    color: rgb(110, 111, 112);
+}
+
+
+
+
+@media (max-width:1000px) {
+    .content h1{
+        font-size: 100px;
+    }
+    .content a{
+        font-size: 18px;
+        padding: 10px 50px;
+    }
+    .content h2{
+        font-size: 40px;
+    }
+    .discover h1{
+        font-size: 35px;
+    }
+    .car-detail .offer-title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:800px) {
+    .content h1{
+        font-size: 70px;
+    }
+    .content a{
+        font-size: 15px;
+        padding: 7px 20px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .discover h1{
+        font-size: 30px;
+        width: 100%;
+    }
+    .car-detail .offer-title {
+        font-size: 20px;
+    }
+    .car-detail .offer-subtitle{
+        font-size: 16px;
+    }
+}
+
+@media (max-width:600px) {
+    .content h1{
+        font-size: 60px;
+    }
+    .content a{
+        font-size: 15px;
+        padding: 7px 20px;
+    }
+    .content h2{
+        font-size: 30px;
+    }
+    .discover h1{
+        font-size: 25px;
+        width: 100%;
+    }
+    .car-detail .offer-title {
+        font-size: 20px;
+    }
+    .car-detail .offer-subtitle{
+        font-size: 16px;
+    }
+}
