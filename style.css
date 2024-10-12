@@ -153,6 +153,9 @@
     justify-content: center;
     color: rgb(148, 149, 151);
 }
+.third img{
+    max-width: 500px;
+}
 
 .services{
     margin: 50px 0;
