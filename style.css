@@ -139,7 +139,8 @@
 
 .available img{
     margin: 30px 0;
-    width: 80%;
+    max-width: 80%;
+    height: 300px;
 }
 
 .available img:hover{
@@ -155,6 +156,7 @@
 }
 .third img{
     max-width: 500px;
+    height: 300px;
 }
 
 .services{
@@ -280,6 +282,12 @@
     .car-detail .offer-title {
         font-size: 22px;
     }
+    .available img{
+        height: 280px;
+    }
+    .third img{
+        height: 280px;
+    }
 }
 
 @media (max-width:800px) {
@@ -303,6 +311,12 @@
     .car-detail .offer-subtitle{
         font-size: 16px;
     }
+    .available img{
+        height: 260px;
+    }
+    .third img{
+        height: 260px;
+    }
 }
 
 @media (max-width:600px) {
@@ -325,5 +339,11 @@
     }
     .car-detail .offer-subtitle{
         font-size: 16px;
+    }
+    .available img{
+        height: 240px;
+    }
+    .third img{
+        height: 240px;
     }
 }
